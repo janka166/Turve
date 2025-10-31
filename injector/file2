@@ -1,0 +1,9 @@
+cat > executable2 <<'EOF'
+#!/usr/bin/env bash
+echo "Hello from executable2"
+echo "User: $(whoami)"
+echo "Host: $(hostname)"
+echo "Date: $(date --iso-8601=seconds 2>/dev/null || date)"
+exit 0
+EOF
+chmod +x executable2

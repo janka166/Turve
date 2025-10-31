@@ -1,0 +1,7 @@
+cat > executable1 <<'EOF'
+#!/usr/bin/env bash
+echo "Hello from executable1"
+echo "Args: $@"
+exit 0
+EOF
+chmod +x executable1
